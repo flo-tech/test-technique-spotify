@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using MvcLibrary.Data;
-using MvcLibrary.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,18 +9,7 @@ builder.Services.AddDbContext<MvcLibraryContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
-// builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//   options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-
 var app = builder.Build();
-
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-
-    SeedData.Initialize(services);
-}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

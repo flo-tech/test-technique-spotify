@@ -42,7 +42,7 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-  tab-size: 4;
+     tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -85,7 +85,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*
@@ -354,8 +354,7 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -423,9 +422,7 @@ video {
   display: none;
 }
 
-*,
-::before,
-::after {
+*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -435,16 +432,16 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x: ;
-  --tw-pan-y: ;
-  --tw-pinch-zoom: ;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal: ;
-  --tw-slashed-zero: ;
-  --tw-numeric-figure: ;
-  --tw-numeric-spacing: ;
-  --tw-numeric-fraction: ;
-  --tw-ring-inset: ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -452,24 +449,24 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur: ;
-  --tw-brightness: ;
-  --tw-contrast: ;
-  --tw-grayscale: ;
-  --tw-hue-rotate: ;
-  --tw-invert: ;
-  --tw-saturate: ;
-  --tw-sepia: ;
-  --tw-drop-shadow: ;
-  --tw-backdrop-blur: ;
-  --tw-backdrop-brightness: ;
-  --tw-backdrop-contrast: ;
-  --tw-backdrop-grayscale: ;
-  --tw-backdrop-hue-rotate: ;
-  --tw-backdrop-invert: ;
-  --tw-backdrop-opacity: ;
-  --tw-backdrop-saturate: ;
-  --tw-backdrop-sepia: ;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
 }
 
 ::backdrop {
@@ -482,16 +479,16 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x: ;
-  --tw-pan-y: ;
-  --tw-pinch-zoom: ;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal: ;
-  --tw-slashed-zero: ;
-  --tw-numeric-figure: ;
-  --tw-numeric-spacing: ;
-  --tw-numeric-fraction: ;
-  --tw-ring-inset: ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -499,24 +496,24 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur: ;
-  --tw-brightness: ;
-  --tw-contrast: ;
-  --tw-grayscale: ;
-  --tw-hue-rotate: ;
-  --tw-invert: ;
-  --tw-saturate: ;
-  --tw-sepia: ;
-  --tw-drop-shadow: ;
-  --tw-backdrop-blur: ;
-  --tw-backdrop-brightness: ;
-  --tw-backdrop-contrast: ;
-  --tw-backdrop-grayscale: ;
-  --tw-backdrop-hue-rotate: ;
-  --tw-backdrop-invert: ;
-  --tw-backdrop-opacity: ;
-  --tw-backdrop-saturate: ;
-  --tw-backdrop-sepia: ;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
 }
 
 .-m-1 {
@@ -534,6 +531,14 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-8 {
@@ -558,7 +563,7 @@ video {
 
 .gap-x-12 {
   -moz-column-gap: 3rem;
-  column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .bg-white {
@@ -580,10 +585,6 @@ video {
 
 .pb-3 {
   padding-bottom: 0.75rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-sm {
@@ -609,301 +610,4 @@ video {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}
-
-.fit-picture {
-  width: 100px;
-  border-radius: 15px;
-}
-
-.picture {
-  margin-right: 5%;
-  margin-left: 10%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.SongData {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-}
-
-.SongData p {
-  font-size: medium;
-  text-align: center;
-}
-
-.criteria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 5%;
-  margin-left: 10%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.Data {
-  height: 120px;
-  display: flex;
-  box-sizing: border-box;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  margin-top: 3%;
-  margin-right: 3%;
-  margin-left: 3%;
-}
-
-.NewSong {
-  display: flex;
-  align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.btn-newSong {
-  width: auto;
-  box-sizing: border-box;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  text-align: center;
-  background: #edf2fb;
-  width: 350px;
-  height: 50px;
-  display: block;
-  margin: auto;
-}
-
-.AddNewSong {
-  width: auto;
-  box-sizing: border-box;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  text-align: center;
-  background: #edf2fb;
-  width: 50px;
-  height: 50px;
-  display: block;
-  margin: auto;
-  cursor: pointer;
-}
-
-.centerP {
-  margin-top: 17%;
-  font-size: 25px;
-}
-
-a p {
-  margin-top: 3%;
-}
-
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2.5rem;
-  width: 90%;
-  max-width: 1000px;
-  margin: 10vh auto;
-}
-
-.card {
-  border-radius: 16px;
-  box-shadow: 0 30px 30px -25px rgba(0, 0, 0, 0.25);
-  /* box-shadow: 0 30px 30px -25px rgba(#4133B7, 0.25); */
-  max-width: 300px;
-}
-
-.information {
-  background-color: white;
-  padding: 1.5rem;
-
-}
-
-
-body {
-  font-family: "Spline Sans", sans-serif;
-  line-height: 1.5;
-  min-height: 100vh;
-  background-color: rgba(234, 238, 246, 0.25);
-}
-
-.dot {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: 1px solid black;
-  display: inline-block;
-}
-
-.blue {
-  background-color: #0ec4f1;
-}
-
-.yellow {
-  background-color: #e2f10ed2;
-}
-
-.white {
-  background-color: white;
-}
-
-.taste:hover {
-  background-color: #e2f10ed2;
-}
-
-.originality:hover {
-  background-color: #0ec4f1;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
-
-.search input {
-  width: 300px;
-  border: 2px solid black;
-  padding: 10px;
-  border-radius: 30px;
-  margin: auto;
-  z-index: 8;
-}
-
-.search i {
-  /* position: absolute; */
-  /* left: 58vw; */
-  /* margin-left: 270px; */
-  /* margin: auto; */
-  margin-right: 20px;
-  z-index: 10;
-}
-
-.search-form {
-  width: auto;
-
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
-  margin-top: 3%;
-}
-
-form {
-  display: flex;
-  align-items: center;
-}
-
-input[type="text"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  flex-grow: 1;
-}
-
-button[type="submit"] {
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-left: 10px;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  margin-top: 20%;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup .close {
-  display: flex;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-
-.popup .close:hover {
-  color: red;
-}
-
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}
-
-.popup_header {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.popup_header h1 {
-  font-size: x-large;
-  margin: auto;
-}
-
-.content .flex {
-  margin-top: 5%;
-}
-
-.content .flex p {
-  margin-left: 15%;
-}
-
-.content .flex .dot {
-  margin-left: 15%;
-}
-
-@media (max-width: 1024px) {
-  .dot {
-    height: 15px;
-    width: 15px;
-  }
-
-  .SongData p {
-    font-size: small;
-  }
-}
-
-
-@media (max-width: 800px) {
-  .SongData p {
-    font-size: x-small;
-  }
-
 }

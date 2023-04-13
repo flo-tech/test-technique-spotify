@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace MvcLibrary.Models;
 
 public class Library

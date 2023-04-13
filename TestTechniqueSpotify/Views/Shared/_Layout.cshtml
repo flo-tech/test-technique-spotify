@@ -35,18 +35,20 @@
         </main>
     </div>
 
-    <div id="Info" class="overlay">
+    <div id="Info" class="overlay" onc>
         <div class="popup">
-            <a class="close" href="#">&times;</a>
+            @* <a class="close" href="#">&times;</a> *@
             <div class="popup_header">
                 <h1>Noter les titres selon : </h1>
+                <a class="close" href="#">&times;</a>
+                @* <a id="close-dialog" href="#">&times;</a> *@
             </div>
             <div class="content">
-                <div class="flex">
+                <div class="flex margin">
                     <a class="dot yellow taste"></a>
                     <p> Votre goût</p>
                 </div>
-                <div class="flex">
+                <div class="flex margin">
                     <a class="dot blue originality"></a>
                     <p> Son originalité</p>
                 </div>
