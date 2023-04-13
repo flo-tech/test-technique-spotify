@@ -1,0 +1,63 @@
+@model IEnumerable<MvcLibrary.Models.Library>
+
+@{
+    ViewData["Title"] = "Bibliothèque";
+}
+
+<table class="table">
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <div class="Data">
+                <div class="picture">
+                    <img class="fit-picture" src=@item.AlbumImage>
+                </div>
+                <div class="SongData">
+                    <p>Titre : @Html.DisplayFor(modelItem => item.Title)</p>
+                    <p>Artist : @Html.DisplayFor(modelItem => item.Artist)</p>
+                    <p>Nom de L'album : @Html.DisplayFor(modelItem => item.AlbumName)</p>
+
+                </div>
+                <div class="criteria">
+                    <div>
+                        @for (int i = 0; i < 5; i++)
+                        {
+                            if (i < item.Taste)
+                            {
+                                <a class="dot yellow taste" asp-area="" asp-controller="Library" asp-action="ChangeTaste"
+                        asp-route-ID="@item.Id" asp-route-TasteLv="@i"></a>
+                            }
+                            else
+                            {
+                                <a class="dot white taste" asp-area="" asp-controller="Library" asp-action="ChangeTaste"
+                        asp-route-ID="@item.Id" asp-route-TasteLv="@i"></a>
+                            }
+                        }
+                    </div>
+                    <div>
+                        @for (int i = 0; i < 5; i++)
+                        {
+                            if (i < item.Originality)
+                            {
+                                <a class="dot blue originality" asp-area="" asp-controller="Library" asp-action="ChangeOriginality"
+                        asp-route-ID="@item.Id" asp-route-OriginalityLv="@i"></a>
+                            }
+                            else
+                            {
+                                <a class="dot white originality" asp-area="" asp-controller="Library" asp-action="ChangeOriginality"
+                        asp-route-ID="@item.Id" asp-route-OriginalityLv="@i"></a>
+                            }
+                        }
+                    </div>
+
+                </div>
+            </div>
+        }
+        <div class="NewSong">
+            <a class="btn-newSong" asp-area="" asp-controller="Library" asp-action="Search">
+                <p>Ajouter un nouveau titre</p>
+            </a>
+        </div>
+
+    </tbody>
+</table>

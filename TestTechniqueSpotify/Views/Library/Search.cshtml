@@ -1,0 +1,41 @@
+@model MvcLibrary.Models.Library
+
+@{
+    ViewData["Title"] = "Rechercher des titres";
+}
+
+<table class="table">
+    <tbody>
+        <div class="search-container">
+            <form>
+                <input type="text" name="title" placeholder="Saisir un titre...">
+                <button type="submit" asp-area="" asp-controller="Library" asp-action="Search">Go</button>
+            </form>
+        </div>
+        @foreach (var item in ViewBag.library)
+        {
+            <div class="Data">
+                <div class="picture">
+                    <img class="fit-picture" src=@item.AlbumImage>
+                </div>
+                <div class="SongData">
+                    <p>Titre : @item.Title</p>
+                    <p>Artist : @item.Artist</p>
+                    <p>Nom de L'album : @item.AlbumName</p>
+
+                </div>
+                <div class="criteria">
+                    <form asp-action="Search" hidden>
+                        <input asp-for="Title" value=@item.Title class="form-control" hidden />
+                        <input asp-for="Artist" value=@item.Artist class="form-control" hidden />
+                        <input asp-for="AlbumName" value=@item.AlbumName class="form-control" hidden />
+                        <input asp-for="AlbumImage" value=@item.AlbumImage class="form-control" hidden />
+                        <input asp-for="Originality" value="0" class="form-control" hidden />
+                        <input asp-for="Taste" value="0" class="form-control" hidden />
+                        <input type="submit" value="+" class="AddNewSong" />
+                    </form>
+                </div>
+            </div>
+        }
+    </tbody>
+</table>
