@@ -21,10 +21,10 @@ namespace TestTechniqueSpotify.Controllers
         // GET: Library
         public async Task<IActionResult> Index()
         {
-            List<Library> test = await _context.Library.ToListAsync();
-            test.OrderBy(x => x.Taste);
+            List<Library> LibraryList = await _context.Library.ToListAsync();
+
             return _context.Library != null ?
-                        View(test.OrderBy(x => (x.Taste + x.Originality) / 2).Reverse()) :
+                        View(LibraryList.OrderBy(x => (((float)x.Taste + (float)x.Originality) / 2)).Reverse()) :
                         Problem("Entity set 'MvcLibraryContext.Library'  is null.");
         }
 
